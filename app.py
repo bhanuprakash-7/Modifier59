@@ -85,4 +85,4 @@ def process():
 app.add_url_rule('/tool','webio_view',webio_view(process),
                  methods=['GET','POST','OPTIONS'])
 
-app.run(host='localhost',port=80)
+app.run(debug=False,host='0.0.0.0')
